@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LAPORAN KONFIGURASI VLAN — Alfin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>KONFIGURASI VLAN</h1>
+    <p>Disusun oleh: Alfin</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Topologi</h2>
+      <img src="Picture1.png" alt=>
+    </section>
+
+    <section class="card">
+      <h2>Tujuan</h2>
+      <ol>
+        <P>VLAN bertujuan untuk membagi jaringan fisik menjadi beberapa domain siaran.<br /> Sehingga dapat meningkatkan kinerja jaringan, menghubungkan beberapa jenis LAN, dan juga membuat keamanan jaringan<br />
+<br />1:mengetahui apa itu Vlan<br />
+2.mengetahui bagaimana konfigurasi Vlan<br />
+3.mengetahui bagaimana cara mengelompokkan jaringan dengan Vlan<br />
+   <br /> VLAN menghubungakan semua perangkat komputer dalam lebih dari satu LAN.<br /> VLAN menyediakan akses tautan data ke semua host komputer yang terhubung ke switch dan diberi ID yang sama.<br /> VLAN membuat domain broadcastnya sendiri, memisahkan jaringan fisik yang ada menjadi beberapa jaringan logis.</P>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Ringkasan</h2>
+      <p>VLAN bertujuan untuk membagi jaringan fisik menjadi beberapa domain siaran, sehingga dapat meningkatkan kinerja jaringan, menghubungkan beberapa jenis LAN, dan meningkatkan keamanan jaringan.</p>
+    </section>
+
+    <section class="card">
+      <h2>Apa itu VLAN?</h2>
+      <p>VLAN menghubungkan semua perangkat komputer dalam lebih dari satu LAN. VLAN menyediakan akses tautan data ke semua host komputer yang terhubung ke switch dan diberi ID yang sama. VLAN membuat domain broadcast-nya sendiri, memisahkan jaringan fisik yang ada menjadi beberapa jaringan logis.</p>
+    </section>
+
+    <section class="card">
+      <h2>Konfigurasi VLAN</h2>
+
+      <h3>1. Persiapan Perangkat</h3>
+      <ul>
+        <li>Gunakan 4 Switch 2950-24.</li>
+        <li>Gunakan 16 PC Generic.</li>
+        <li>Hubungkan 4 PC dengan 1 switch, masing-masing menggunakan kabel Copper Straight-Through.</li>
+        <li>Hubungkan ke-4 switch dengan kabel Copper Cross-Over.</li>
+      </ul>
+      
+
+      <h3>2. Penetapan Alamat IP</h3>
+      <p>Sekarang, mulai setting masing-masing IP PC. Klik PC => Desktop => IP Configuration.</p>
+      <img src="Picture2.png" alt="Pengaturan IP" width="50%" height="50%">
+      <img src="Picture3.png" alt="Diagram Koneksi"width="50%" height="50%">
+      <img src="Picture4.png" alt="Diagram Koneksi"width="50%" height="50%">
+      <img src="Picture5.png" alt="Diagram Koneksi"width="50%" height="50%">
+      <img src="Picture6.png" alt="Diagram Koneksi"width="50%" height="50%">
+
+
+
+      <h3>3. Pembuatan VLAN pada Switch</h3>
+      <p>Buat VLAN 10 dan VLAN 20 di masing-masing switch.</p>
+      <img src="Picture7.png" alt="Perintah VLAN"width="50%" height="50%">
+ 
+      <h3>4. Verifikasi VLAN</h3>
+      <p>Verifikasi bahwa VLAN yang sudah dibuat telah tercatat di tabel VLAN pada switch.</p>
+      <img src="Picture8.png" alt="Perintah VLAN"width="50%" height="50%">
+      <img src="Picture9.png" alt="Perintah VLAN"width="50%" height="50%">
+
+      <h3>5. Menetapkan Port ke VLAN</h3>
+      <p>Masukkan port-port yang relevan sebagai anggota masing-masing VLAN (VLAN 10 atau VLAN 20).</p>
+     <img src="Picture10.png" alt="Perintah VLAN"width="50%" height="50%">
+
+      <h3>6. Pengujian Konektivitas</h3>
+      <p>Lakukan ping pada perangkat dalam VLAN yang sama; koneksi akan reply. Jika antar VLAN berbeda tanpa routing, maka akan time out.</p>
+      <img src="Picture11.png" alt="Perintah VLAN"width="50%" height="50%">
+      <img src="Picture12.png" alt="Perintah VLAN"width="50%" height="50%">
+      <img src="Picture13.png" alt="Perintah VLAN"width="50%" height="50%">
+      <img src="Picture14.png" alt="Perintah VLAN"width="50%" height="50%">
+
+      <h3>7. Konfigurasi VLAN 20</h3>
+      <p>Lakukan langkah konfigurasi yang sama untuk VLAN 20 sesuai kebutuhan topologi.</p>
+      <img src="Picture15.png" alt="Perintah VLAN"width="50%" height="50%">
+      <img src="Picture16.png" alt="Perintah VLAN"width="50%" height="50%">
+    </section>
+
+    <section class="card">
+      <h2>Kesimpulan</h2>
+      <p>VLAN berfungsi sebagai pengelompokan jaringan. <br />Penggunaan VLAN juga dapat menjaga informasi yang tidak seharusnya dilihat oleh kelompok lain, sehingga informasi tetap aman.<br /> VLAN menjadi solusi atas lambatnya penyampaian pesan saat jaringan semakin besar; dengan VLAN, penyampaian pesan menjadi lebih efisien.</p>
+    </section>
+  </main>
+</body>
+</html>
